@@ -1,2 +1,2 @@
-{{ . | replaceRE "(<h[2-9] id=\"([^\"]+)\">)(.+)(</h[2-9]+>)" `${1}${3}<a href="#${2}">&nbsp;#</a>${4}` | safeHTML }}
+{{ . | replaceRE "(<h[2-9] id=\"([^\"]+)\">)(.+)(</h[2-9]+>)" `${1}${3}<a href="#${2}" class="headerlink" title="Permalink to this section">&#xb6;</a>${4}` | safeHTML }}
 
